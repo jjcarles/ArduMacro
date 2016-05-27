@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jocajica.ardumacro"
+    android:versionCode="1"
+    android:versionName="1.5">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".MacroApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MotorPosActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".DetallesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".SesionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity
+            android:name=".ConexionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+    </application>
+
+</manifest>
